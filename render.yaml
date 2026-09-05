@@ -19,3 +19,5 @@ services:
         value: sync
       - key: LOG_CHANNEL
         value: stderr
+      - key: VIEW_COMPILED_PATH
+        value: /tmp/laravel-views

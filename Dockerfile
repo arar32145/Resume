@@ -2,6 +2,8 @@ FROM php:8.3-cli
 
 WORKDIR /app
 
+ENV VIEW_COMPILED_PATH=/tmp/laravel-views
+
 RUN apt-get update \
     && apt-get install -y --no-install-recommends git unzip libzip-dev \
     && docker-php-ext-install zip \
@@ -12,7 +14,8 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 COPY . .
 
 RUN mkdir -p storage/framework/cache storage/framework/sessions storage/framework/views storage/logs bootstrap/cache \
-    && chmod -R ug+rwX storage bootstrap/cache
+    /tmp/laravel-views \
+    && chmod -R ug+rwX storage bootstrap/cache /tmp/laravel-views
 
 RUN composer install --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader \
     && APP_KEY="$(php -r 'echo "base64:".base64_encode(random_bytes(32));')" php artisan package:discover --ansi
