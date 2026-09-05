@@ -92,7 +92,8 @@
 
   <div class="viewer-shell">
     <div class="viewer-frame">
-      <iframe src="{{ asset('files/research.pdf') }}" title="Research publication PDF"></iframe>
+      <iframe src="/files/research.pdf" title="Research publication PDF"></iframe>
+      <p><a href="/files/research.pdf" target="_blank" rel="noopener">Open the PDF directly</a></p>
     </div>
   </div>
 </body>
