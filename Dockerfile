@@ -11,7 +11,8 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 COPY . .
 
-RUN composer install --no-dev --no-interaction --no-progress --optimize-autoloader
+RUN composer install --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader \
+    && APP_KEY="$(php -r 'echo "base64:".base64_encode(random_bytes(32));')" php artisan package:discover --ansi
 
 EXPOSE 10000
 
