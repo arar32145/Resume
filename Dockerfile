@@ -11,6 +11,9 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 COPY . .
 
+RUN mkdir -p storage/framework/cache storage/framework/sessions storage/framework/views storage/logs bootstrap/cache \
+    && chmod -R ug+rwX storage bootstrap/cache
+
 RUN composer install --no-dev --no-interaction --no-progress --no-scripts --optimize-autoloader \
     && APP_KEY="$(php -r 'echo "base64:".base64_encode(random_bytes(32));')" php artisan package:discover --ansi
 
