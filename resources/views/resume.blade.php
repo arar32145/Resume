@@ -111,8 +111,8 @@
       <footer class="footer">
         <div><span class="footer-mark">JL.</span><p>Ready to learn, contribute,<br>and build what matters.</p></div>
         <div id="contact">
-          <a class="email-link" href="mailto:arar32145@gmail.com">arar32145@gmail.com <span>↗</span></a>
-          <a class="email-link" href="tel:09054962282">09054962282 <span>↗</span></a>
+          <p class="contact-detail"><strong>Email:</strong> arar32145@gmail.com</p>
+          <p class="contact-detail"><strong>Mobile number:</strong> 09054962282</p>
         </div>
       </footer>
     </main>
