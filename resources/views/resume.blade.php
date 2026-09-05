@@ -110,7 +110,10 @@
 
       <footer class="footer">
         <div><span class="footer-mark">JL.</span><p>Ready to learn, contribute,<br>and build what matters.</p></div>
-        <a class="email-link" id="contact" href="#top">Contact available on request <span>↗</span></a>
+        <div id="contact">
+          <a class="email-link" href="mailto:arar32145@gmail.com">arar32145@gmail.com <span>↗</span></a>
+          <a class="email-link" href="tel:09054962282">09054962282 <span>↗</span></a>
+        </div>
       </footer>
     </main>
   </div>
