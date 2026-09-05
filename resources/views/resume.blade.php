@@ -92,7 +92,7 @@
           <div class="skill-card"><span class="skill-number">05</span><h3>Data Entry</h3><p>Accurate, organized operations</p></div>
           <div class="skill-card"><span class="skill-number">06</span><h3>Docker</h3><p>Containerized development & deployment</p></div>
           <div class="skill-card"><span class="skill-number">07</span><h3>API / AI Integration</h3><p>Connected services and intelligent features</p></div>
-          <div class="skill-card"><span class="skill-number">08</span><h3>Project Automation</h3><p>Streamlined workflows and repeatable processes</p></div>
+          <div class="skill-card"><span class="skill-number">08</span><h3>n8n Automation</h3><p>Workflow orchestration and connected processes</p></div>
         </div>
       </section>
 
